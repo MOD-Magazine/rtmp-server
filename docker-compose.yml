@@ -1,0 +1,21 @@
+version: "3"
+services:
+  rtmp:
+    build: rtmp
+    depends_on:
+      - auth
+    volumes:
+      - ./recordings:/recordings
+    ports:
+      - 1935:1935
+      - 8080:80
+    environment:
+      - YOUTUBE_KEY=TODO
+      - TWITCH_KEY=TODO
+  auth:
+    build: .
+    environment:
+      - ROCKET_PORT=80
+      - ROCKET_ENV=production
+      - ROCKET_ADDRESS=0.0.0.0
+      - STREAM_KEYS=TODO
