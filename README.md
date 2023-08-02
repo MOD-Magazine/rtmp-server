@@ -7,10 +7,9 @@ the host computer (instead of connecting to Twitch, to YouTube, and recording al
 ## Usage
 
 1. Clone this repository.
-2. Fill out the `TODO`s in `docker-compose.yml`.
-3. Remove the relevant commented lines in `rtmp/nginx.conf`
-4. `docker-compose build`
-5. `docker-compose up`
+2. Remove the relevant commented lines in `rtmp/nginx.conf` and fill in your stream keys.
+3. `docker-compose build`
+4. `docker-compose up`
 
 ## Architecture
 
