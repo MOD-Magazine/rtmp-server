@@ -9,9 +9,6 @@ services:
     ports:
       - 1935:1935
       - 8080:80
-    environment:
-      - YOUTUBE_KEY=TODO
-      - TWITCH_KEY=TODO
   auth:
     build: .
     environment:
